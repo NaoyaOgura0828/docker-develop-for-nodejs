@@ -27,7 +27,7 @@ RUN apt-get update -y &&\
 # Add Repository for node.js
 RUN curl -fsSL https://deb.nodesource.com/setup_${NODEJS_VERSION}.x | bash -
 
-# Install node.js npm
+# Install node.js
 RUN apt-get update -y &&\
     apt-get install nodejs -y
 

@@ -83,8 +83,6 @@ NETWORK_NAME = ${ネットワーク名}
 
 <br>
 
-<br>
-
 ## node.js versionの設定(Optional)
 [.env](./.env)内の`NODEJS_VERSION`を任意の[node.js version](https://nodejs.org/en/about/previous-releases)に設定する。
 

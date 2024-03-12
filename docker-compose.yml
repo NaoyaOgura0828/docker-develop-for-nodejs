@@ -10,7 +10,7 @@ services:
       args:
         - BASE_IMAGE_TAG=${BASE_IMAGE_TAG}
         - USER_NAME=${USER_NAME}
-        - NODEJS_VERSION=${NODEJS_VERSION}
+        - NODEJS_MAJOR_VERSION=${NODEJS_MAJOR_VERSION}
     volumes:
       - home:/home
     user: ${USER_NAME}

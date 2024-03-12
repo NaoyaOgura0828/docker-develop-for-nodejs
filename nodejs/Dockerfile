@@ -5,7 +5,7 @@ FROM ubuntu:${BASE_IMAGE_TAG}
 # Set ARG
 ARG TZ=Asia/Tokyo
 ARG USER_NAME=${USER_NAME}
-ARG NODEJS_VERSION=${NODEJS_VERSION}
+ARG NODEJS_MAJOR_VERSION=${NODEJS_MAJOR_VERSION}
 
 # Set TimeZone
 RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone
@@ -25,7 +25,7 @@ RUN apt-get update -y &&\
     apt-get install zip -y
 
 # Add Repository for node.js
-RUN curl -fsSL https://deb.nodesource.com/setup_${NODEJS_VERSION}.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_${NODEJS_MAJOR_VERSION}.x | bash -
 
 # Install node.js
 RUN apt-get update -y &&\
